@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0116A81C1DA904210067EBD4 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116A81B1DA904210067EBD4 /* BannerViewController.swift */; };
-		015E333D1D93FDD200A5355D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 015E333C1D93FDD200A5355D /* GoogleService-Info.plist */; };
 		0179FB4D1D8985DC00A91115 /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179FB4C1D8985DC00A91115 /* Like.swift */; };
 		0179FB4F1D8986A100A91115 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179FB4E1D8986A100A91115 /* ViewHelper.swift */; };
 		0179FB511D8986F200A91115 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179FB501D8986F200A91115 /* Config.swift */; };
@@ -46,6 +45,7 @@
 		7C66E9541E99A39400079053 /* ProfileFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C66E9531E99A39400079053 /* ProfileFeedViewController.swift */; };
 		7CB960A41E8064CD00BE0FD1 /* MustageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB960A31E8064CD00BE0FD1 /* MustageTests.swift */; };
 		7CD545891EEA1F6F00691B06 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD545881EEA1F6F00691B06 /* MessageUI.framework */; };
+		9A9D3EC81F41B19C00E22073 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D3EC71F41B19C00E22073 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,6 @@
 /* Begin PBXFileReference section */
 		0104470F1D9D5F2D00425C18 /* Mustage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Mustage.entitlements; path = ../Mustage.entitlements; sourceTree = "<group>"; };
 		0116A81B1DA904210067EBD4 /* BannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BannerViewController.swift; path = Classes/BannerViewController.swift; sourceTree = "<group>"; };
-		015E333C1D93FDD200A5355D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0179FB4C1D8985DC00A91115 /* Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Like.swift; path = Classes/Like.swift; sourceTree = "<group>"; };
 		0179FB4E1D8986A100A91115 /* ViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewHelper.swift; path = Classes/ViewHelper.swift; sourceTree = "<group>"; };
 		0179FB501D8986F200A91115 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -114,6 +113,7 @@
 		7CEBBEB61E80988900843C9B /* Pods_Mustage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Mustage.framework; path = "DerivedData/Project/Build/Products/Debug-iphonesimulator/Pods_Mustage.framework"; sourceTree = "<group>"; };
 		82CB9D0416DE3B33422BFB5D /* Pods-b03-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-b03-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-b03-iosTests/Pods-b03-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		85995037BF37EBA6A02B7866 /* Pods_MustageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MustageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9D3EC71F41B19C00E22073 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0113D3EB943776C6B99D986 /* Pods_b03_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_b03_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8FAF7FF1D718C6629167A0 /* Pods-Mustage-MustageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mustage-MustageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mustage-MustageTests/Pods-Mustage-MustageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC9C15314237A3F5BCDC763 /* Pods-MustageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MustageTests/Pods-MustageTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 				01D7EAE91DA64F5100FF7607 /* AuthLogoView.xib */,
 				01D8DE3A1D84534100E6D6AC /* Assets.xcassets */,
 				7C5F3FCF1EB35B1D00133AB8 /* README.md */,
-				015E333C1D93FDD200A5355D /* GoogleService-Info.plist */,
+				9A9D3EC71F41B19C00E22073 /* GoogleService-Info.plist */,
 				01D8DE3F1D84534100E6D6AC /* Info.plist */,
 			);
 			name = Assets;
@@ -368,9 +368,9 @@
 				TargetAttributes = {
 					01D8DE2D1D84534100E6D6AC = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 4H3387EM98;
+						DevelopmentTeam = 2B69NXULXJ;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 0;
@@ -413,8 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D8DE3E1D84534100E6D6AC /* LaunchScreen.storyboard in Resources */,
-				015E333D1D93FDD200A5355D /* GoogleService-Info.plist in Resources */,
 				01D8DE3B1D84534100E6D6AC /* Assets.xcassets in Resources */,
+				9A9D3EC81F41B19C00E22073 /* GoogleService-Info.plist in Resources */,
 				01D8DE391D84534100E6D6AC /* Main.storyboard in Resources */,
 				01D7EAEA1DA64F5100FF7607 /* AuthLogoView.xib in Resources */,
 			);
@@ -708,12 +708,13 @@
 				CODE_SIGN_ENTITLEMENTS = Mustage.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4H3387EM98;
+				DEVELOPMENT_TEAM = 2B69NXULXJ;
 				INFOPLIST_FILE = "b03-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f6a383a7-5fc5-48d0-8b20-733da6ccae59";
+				PROVISIONING_PROFILE_SPECIFIER = emojiDev_10_08_17;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -726,12 +727,13 @@
 				CODE_SIGN_ENTITLEMENTS = Mustage.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4H3387EM98;
+				DEVELOPMENT_TEAM = 2B69NXULXJ;
 				INFOPLIST_FILE = "b03-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f6a383a7-5fc5-48d0-8b20-733da6ccae59";
+				PROVISIONING_PROFILE_SPECIFIER = emojiDev_10_08_17;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

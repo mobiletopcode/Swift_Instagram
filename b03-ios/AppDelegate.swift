@@ -17,6 +17,9 @@ import FirebaseMessaging
 import GoogleMobileAds
 import SDWebImage
 
+import FBSDKCoreKit
+import FBSDKLoginKit
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -62,12 +65,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     @available(iOS 9.0, *)
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
-        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String
-        return FIRAuthUI.default()?.handleOpen(url, sourceApplication: sourceApplication) ?? false
-    }
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+//        
+//        print("URL SCheme \(url.scheme)")
+//        
+//        if url.scheme! == "fb463667583674080"{
+//            
+//            return true
+//           
+//            
+//        }
+//        
+//        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String
+//        return FIRAuthUI.default()?.handleOpen(url, sourceApplication: sourceApplication) ?? false
+//        
+//        
+//        
+//    }
+    
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
+        if url.scheme! == "fb2000311693534969"{
+            
+//            return true
+            return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+            
+        }
         return FIRAuthUI.default()?.handleOpen(url, sourceApplication: sourceApplication ?? "") ?? false
     }
     

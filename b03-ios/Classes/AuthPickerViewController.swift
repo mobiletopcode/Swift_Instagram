@@ -13,6 +13,8 @@ class HeaderView : UIView {
     
     @IBAction func onAgreementClicked(_ sender: Any) {
         UIApplication.shared.openURL(URL(string:kEulaUrl)!)
+        
+//          UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 
 }

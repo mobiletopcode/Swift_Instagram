@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, ‘9.1’
 use_frameworks!
 inhibit_all_warnings!
 
@@ -17,6 +17,7 @@ def core_pods
     pod 'GoogleSignIn'
     pod 'SDWebImage'
     pod 'DateToolsSwift'
+    pod "GBHFacebookImagePicker"
 end
 
 target 'Mustage' do

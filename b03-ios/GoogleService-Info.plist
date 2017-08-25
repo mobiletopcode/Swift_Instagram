@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>181700726109-o3k4h15iknvg5oko25mctmbupb7bpou5.apps.googleusercontent.com</string>
+	<string>680149047594-na9skre64ivh7fj65qfluqciabcappg3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.181700726109-o3k4h15iknvg5oko25mctmbupb7bpou5</string>
+	<string>com.googleusercontent.apps.680149047594-na9skre64ivh7fj65qfluqciabcappg3</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCtZCT08QFVgkGY6QE7bn_ooMHjRNSMySI</string>
+	<string>AIzaSyC1Eg9rxdxj8Ws1BZotbLMa9YvLPJt6OS0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>181700726109</string>
+	<string>680149047594</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.jaw.boom</string>
+	<string>com.test.emoji.admin</string>
 	<key>PROJECT_ID</key>
-	<string>boom-664da</string>
+	<string>album-ad7e4</string>
 	<key>STORAGE_BUCKET</key>
-	<string>boom-664da.appspot.com</string>
+	<string>album-ad7e4.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:181700726109:ios:046b54be5196b567</string>
+	<string>1:680149047594:ios:434a8f1640d0471d</string>
 	<key>DATABASE_URL</key>
-	<string>https://boom-664da.firebaseio.com</string>
+	<string>https://album-ad7e4.firebaseio.com</string>
 </dict>
 </plist>

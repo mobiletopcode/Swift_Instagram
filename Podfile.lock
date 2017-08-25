@@ -66,6 +66,9 @@ PODS:
   - FirebaseUI/Google (0.7.0):
     - FirebaseUI/Auth
     - GoogleSignIn (~> 4.0)
+  - GBHFacebookImagePicker (1.1.5):
+    - FBSDKCoreKit (~> 4.20.0)
+    - FBSDKLoginKit (~> 4.20.0)
   - Google-Mobile-Ads-SDK (7.11.0)
   - GoogleAppUtilities (1.1.1):
     - GoogleSymbolUtilities (~> 1.0)
@@ -104,6 +107,7 @@ DEPENDENCIES:
   - FirebaseUI/Auth (~> 0.7)
   - FirebaseUI/Facebook (~> 0.7)
   - FirebaseUI/Google (~> 0.7)
+  - GBHFacebookImagePicker
   - GoogleSignIn
   - SDWebImage
 
@@ -121,6 +125,7 @@ SPEC CHECKSUMS:
   FirebaseMessaging: 789d23fd796594dfb55dcf36cd325541df887c22
   FirebaseStorage: 3992817bf405f5c1a4f8349678d22724cd0ef509
   FirebaseUI: 6b22f02b8992fd921116b59e8dcda688c4072517
+  GBHFacebookImagePicker: c122bf1bcef85cf87e4562ba7937383a6f17b930
   Google-Mobile-Ads-SDK: 0e864ab93ba1ff8afe92e16de0e4e883f581ed33
   GoogleAppUtilities: f1730f91f67767b453c289577040dd3f425ffdc7
   GoogleAuthUtilities: d7a19615cd7627688afcf181737f1011ee8b5a23
@@ -132,6 +137,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: c3d27564f1e5a311002d89aa8dbc14ebfb557bc5
+PODFILE CHECKSUM: 1a22791c50870f6975e13b0d6943a35659f07e6d
 
 COCOAPODS: 1.2.1

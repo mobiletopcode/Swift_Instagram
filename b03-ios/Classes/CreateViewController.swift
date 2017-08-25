@@ -11,7 +11,11 @@ import Firebase
 import AVFoundation
 import MobileCoreServices
 
-class CreateViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+import GBHFacebookImagePicker
+
+class CreateViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,GBHFacebookImagePickerDelegate {
+   
+
 
     @IBOutlet weak var progressView:UIProgressView?
     @IBOutlet weak var progressLabel:UILabel?
@@ -21,19 +25,18 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewWillAppear(_ animated: Bool) {
         
-        if !isPresented {
-            isPresented = true
-            
-            self.progressView?.isHidden = true
-            self.progressLabel?.isHidden = true
-
-            let picker:UIImagePickerController = UIImagePickerController()
-            picker.sourceType = .photoLibrary
-            picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
-            
-            picker.delegate = self
-            self.present(picker, animated: true, completion: nil)
+        print("Add Image Picker Here...")
+        
+        if !self.isPresented {
+            self.isPresented = true
+        self.showImagePickingOptions()
         }
+        
+    }
+    
+    func getMedia(picker : UIImagePickerController, info: [String:Any]) {
+    
+    
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -199,6 +202,141 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
             
             
         })
+        
+    }
+    
+    // New Code CHINNU 14/08/17
+    
+    func showImagePickingOptions() {
+    
+        let actionSheet = UIAlertController(title: "Choose Image !!", message: "Please select an option to choose image", preferredStyle: .actionSheet)
+        
+        let galleryOption = UIAlertAction(title: "Gallery", style: .default, handler: {(action: UIAlertAction!) in
+        
+            print("Gallery Option selected")
+            
+                self.progressView?.isHidden = true
+                self.progressLabel?.isHidden = true
+                
+                let picker:UIImagePickerController = UIImagePickerController()
+                picker.sourceType = .photoLibrary
+                picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+                
+                picker.delegate = self
+                self.present(picker, animated: true, completion: nil)
+        
+        })
+        
+        let fbOption = UIAlertAction(title: "Facebook", style: .default, handler: {(action: UIAlertAction!) in
+            
+            print("fb Option selected")
+            
+            let picker = GBHFacebookImagePicker()
+
+            picker.presentFacebookAlbumImagePicker(from: self, delegate: self)
+            
+        })
+        
+        let cancelOption = UIAlertAction(title: "Cancel", style:.destructive, handler: {(action: UIAlertAction!) in
+            
+            print("cancel Option selected")
+            self.gotoHomeScreen()
+            
+        })
+        
+        actionSheet.addAction(galleryOption)
+        actionSheet.addAction(fbOption)
+        actionSheet.addAction(cancelOption)
+       // actionSheet.addAction(cancelOption)
+        
+        self.present(actionSheet, animated: true, completion: nil)
+    
+    }
+    
+    
+    // added on 14/08/17
+    func getImageFromFb(image: UIImage){
+        
+        
+        //let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let thumbnail = UIImageJPEGRepresentation(image, kJPEGImageQuality) as NSData?
+        
+        if let data = thumbnail {
+            self.progressView?.isHidden = false
+            self.progressLabel?.isHidden = false
+            
+            // Data in memory
+            let storage = FIRStorage.storage().reference()
+            
+            if let user = FIRAuth.auth()?.currentUser {
+                
+                let imgref = storage.child("\(user.uid)-\(NSDate().timeIntervalSince1970).jpg")
+                let metadata = FIRStorageMetadata(dictionary: [ "contentType" : "image/jpg"])
+                
+                // Upload the file to the path "media/"
+                let uploadTask = imgref.put(data as Data, metadata: metadata) { metadata, error in
+                    if (error != nil) {
+                        // Uh-oh, an error occurred!
+                        let alert = UIAlertController(title: kAlertErrorTitle, message: "Can't upload now. Please try later", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: kAlertErrorDefaultButton, style: .default) { (action) in })
+                        self.present(alert, animated: true) {}
+                        self.tabBarController?.selectedIndex = 0 // home
+                        self.isPresented = false
+                    } else {
+                        
+                        // Metadata contains file metadata such as size, content-type, and download URL.
+                        let url = metadata!.downloadURL()!.absoluteString
+                        
+                        self.applyImageFilter(user: user, imageUrl: url)
+                        
+                    }
+                }
+                
+                uploadTask.observe(.progress) { snapshot in
+                    // A progress event occurred
+                    if let progress = snapshot.progress {
+                        let complete = Double(progress.completedUnitCount) / Double(progress.totalUnitCount)
+                        let percentComplete = Int(complete * 98) + 1 // never show 0% or 100%
+                        self.progressView?.progress = Float(complete)
+                        self.progressLabel?.text = "\(kMessageUploadingProcess): \(percentComplete)%"
+                    }
+                }
+            }
+            
+        }
+        
+        
+        
+    }
+    
+
+    
+    func gotoHomeScreen() {
+    
+        self.tabBarController?.selectedIndex = 0 // home
+        self.isPresented = false
+    
+    }
+    
+    // MARK: - GBHFacebookImagePicker Protocol
+    
+    func facebookImagePicker(imagePicker: UIViewController, didFailWithError error: Error?) {
+        print("Cancelled Facebook Album picker with error")
+        print(error.debugDescription)
+        
+        gotoHomeScreen()
+    }
+    
+    // Optional
+    func facebookImagePicker(didCancelled imagePicker: UIViewController) {
+        print("Cancelled Facebook Album picker")
+        
+       gotoHomeScreen()
+    }
+
+    func facebookImagePicker(imagePicker: UIViewController, imageModel: GBHFacebookImage) {
+        
+        self.getImageFromFb(image: imageModel.image!)
         
     }
 

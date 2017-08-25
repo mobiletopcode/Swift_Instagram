@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.jaw.boom</string>
+	<string>com.test.emoji.admin</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -23,22 +23,22 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.181700726109-o3k4h15iknvg5oko25mctmbupb7bpou5</string>
+				<string>com.googleusercontent.apps.680149047594-na9skre64ivh7fj65qfluqciabcappg3</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb463667583674080</string>
+				<string>fb2000311693534969</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>463667583674080</string>
+	<string>2000311693534969</string>
 	<key>FacebookDisplayName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>album</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<true/>
 	<key>LSApplicationQueriesSchemes</key>
