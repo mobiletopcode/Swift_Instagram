@@ -20,6 +20,13 @@ import SDWebImage
 import FBSDKCoreKit
 import FBSDKLoginKit
 
+
+//------------------------------------------------
+// important
+// add you fb<id> here when changing the app
+let FB_URL_SCHEME : String = "fb2000311693534969"
+//------------------------------------------------
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -86,7 +93,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         
-        if url.scheme! == "fb2000311693534969"{
+        
+        if url.scheme! == FB_URL_SCHEME{
             
 //            return true
             return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)

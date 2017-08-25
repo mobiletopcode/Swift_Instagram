@@ -84,7 +84,7 @@ class WelcomeViewController: UIViewController, FIRAuthUIDelegate {
 //             support Google accounts
              FIRGoogleAuthUI(scopes: ["profile", "email"]),
 //             support Facebook accounts
-             FIRFacebookAuthUI()
+             FIRFacebookAuthUI(permissions: ["user_photos"])
         ]
         
         authUI?.providers = provides
