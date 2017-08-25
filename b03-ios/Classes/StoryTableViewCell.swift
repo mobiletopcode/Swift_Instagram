@@ -114,6 +114,7 @@ class StoryTableViewCell: UITableViewCell {
         
         self.storyImage?.sd_cancelCurrentImageLoad()
         self.storyImage?.sd_setImage(with: mediaUrl, completed: { (image, error, type, url) in
+            
             DispatchQueue.main.async {
                 self.layoutSubviews()
                 self.updateConstraints()

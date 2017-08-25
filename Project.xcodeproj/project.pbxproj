@@ -35,6 +35,13 @@
 		01FF76B01D85F17E009B0D99 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF76AF1D85F17E009B0D99 /* Story.swift */; };
 		01FF76B51D85F311009B0D99 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF76B41D85F311009B0D99 /* Comment.swift */; };
 		0BED6DA08DF5035AEC7BE294 /* Pods_Mustage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AEA4F89B1182F4DD3A3638 /* Pods_Mustage.framework */; };
+		5DD61EFF1F3994EF00E4B71C /* MTWebService+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61EE21F3994EF00E4B71C /* MTWebService+Errors.swift */; };
+		5DD61F001F3994EF00E4B71C /* MTWebService+Primitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61EE31F3994EF00E4B71C /* MTWebService+Primitives.swift */; };
+		5DD61F011F3994EF00E4B71C /* MTWebService+Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61EE41F3994EF00E4B71C /* MTWebService+Requests.swift */; };
+		5DD61F021F3994EF00E4B71C /* MTWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61EE51F3994EF00E4B71C /* MTWebService.swift */; };
+		5DD61F1C1F39966F00E4B71C /* MTMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61F1B1F39966F00E4B71C /* MTMessages.swift */; };
+		5DD61F1E1F39983F00E4B71C /* MTWebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61F1D1F39983F00E4B71C /* MTWebServiceRequest.swift */; };
+		5DD61F211F399D6900E4B71C /* MTWebServiceImgFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61F201F399D6900E4B71C /* MTWebServiceImgFilter.swift */; };
 		60227371BC4D0A5CEDB7AD43 /* Pods_MustageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85995037BF37EBA6A02B7866 /* Pods_MustageTests.framework */; };
 		7C66E9541E99A39400079053 /* ProfileFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C66E9531E99A39400079053 /* ProfileFeedViewController.swift */; };
 		7CB960A41E8064CD00BE0FD1 /* MustageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB960A31E8064CD00BE0FD1 /* MustageTests.swift */; };
@@ -90,6 +97,13 @@
 		439D3F324BE7C96C21FD537E /* Pods-b03-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-b03-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-b03-iosUITests/Pods-b03-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		45209BB94AFEA947BAE39B48 /* Pods_b03_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_b03_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		529A3A5D026FF4BAA2AA1E00 /* Pods-b03-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-b03-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-b03-iosTests/Pods-b03-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		5DD61EE21F3994EF00E4B71C /* MTWebService+Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTWebService+Errors.swift"; sourceTree = "<group>"; };
+		5DD61EE31F3994EF00E4B71C /* MTWebService+Primitives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTWebService+Primitives.swift"; sourceTree = "<group>"; };
+		5DD61EE41F3994EF00E4B71C /* MTWebService+Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTWebService+Requests.swift"; sourceTree = "<group>"; };
+		5DD61EE51F3994EF00E4B71C /* MTWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTWebService.swift; sourceTree = "<group>"; };
+		5DD61F1B1F39966F00E4B71C /* MTMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTMessages.swift; sourceTree = "<group>"; };
+		5DD61F1D1F39983F00E4B71C /* MTWebServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTWebServiceRequest.swift; sourceTree = "<group>"; };
+		5DD61F201F399D6900E4B71C /* MTWebServiceImgFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTWebServiceImgFilter.swift; sourceTree = "<group>"; };
 		76AEA4F89B1182F4DD3A3638 /* Pods_Mustage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mustage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F3FCF1EB35B1D00133AB8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		7C66E9531E99A39400079053 /* ProfileFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileFeedViewController.swift; path = Classes/ProfileFeedViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +211,8 @@
 		01D8DE301D84534100E6D6AC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5DD61F1A1F39966F00E4B71C /* Utilities */,
+				5DD61EE01F3994EF00E4B71C /* Network */,
 				0179FB501D8986F200A91115 /* Config.swift */,
 				01D8DE311D84534100E6D6AC /* AppDelegate.swift */,
 				01FF76B31D85F213009B0D99 /* Model */,
@@ -219,6 +235,37 @@
 				0179FB521D89939E00A91115 /* Favorite.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		5DD61EE01F3994EF00E4B71C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5DD61F1F1F399D6900E4B71C /* Requests */,
+				5DD61F1D1F39983F00E4B71C /* MTWebServiceRequest.swift */,
+				5DD61EE21F3994EF00E4B71C /* MTWebService+Errors.swift */,
+				5DD61EE31F3994EF00E4B71C /* MTWebService+Primitives.swift */,
+				5DD61EE41F3994EF00E4B71C /* MTWebService+Requests.swift */,
+				5DD61EE51F3994EF00E4B71C /* MTWebService.swift */,
+			);
+			name = Network;
+			path = Classes/Network;
+			sourceTree = "<group>";
+		};
+		5DD61F1A1F39966F00E4B71C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5DD61F1B1F39966F00E4B71C /* MTMessages.swift */,
+			);
+			name = Utilities;
+			path = Classes/Utilities;
+			sourceTree = "<group>";
+		};
+		5DD61F1F1F399D6900E4B71C /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5DD61F201F399D6900E4B71C /* MTWebServiceImgFilter.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		7CB960A21E8064CD00BE0FD1 /* MustageTests */ = {
@@ -504,16 +551,23 @@
 				01FF76B01D85F17E009B0D99 /* Story.swift in Sources */,
 				01CD322B1D86B58900D7497E /* ProfileViewController.swift in Sources */,
 				01CC78A01DADAA1800913FED /* EditProfileViewController.swift in Sources */,
+				5DD61F021F3994EF00E4B71C /* MTWebService.swift in Sources */,
 				01FD185D1DAF075E005C5722 /* User.swift in Sources */,
 				01D8DE321D84534100E6D6AC /* AppDelegate.swift in Sources */,
+				5DD61F1C1F39966F00E4B71C /* MTMessages.swift in Sources */,
 				0179FB511D8986F200A91115 /* Config.swift in Sources */,
 				01CC789E1DABFE2B00913FED /* ProfileView.swift in Sources */,
 				01FF76B51D85F311009B0D99 /* Comment.swift in Sources */,
 				01CD32211D86048300D7497E /* CommentTableViewCell.swift in Sources */,
+				5DD61F001F3994EF00E4B71C /* MTWebService+Primitives.swift in Sources */,
+				5DD61F1E1F39983F00E4B71C /* MTWebServiceRequest.swift in Sources */,
+				5DD61EFF1F3994EF00E4B71C /* MTWebService+Errors.swift in Sources */,
 				0179FB4D1D8985DC00A91115 /* Like.swift in Sources */,
 				01CD32271D86B57F00D7497E /* FeedViewController.swift in Sources */,
 				0179FB4F1D8986A100A91115 /* ViewHelper.swift in Sources */,
+				5DD61F011F3994EF00E4B71C /* MTWebService+Requests.swift in Sources */,
 				01D7EAE81DA55D3E00FF7607 /* AuthPickerViewController.swift in Sources */,
+				5DD61F211F399D6900E4B71C /* MTWebServiceImgFilter.swift in Sources */,
 				01A018D51DD244160072F299 /* StoryViewController.swift in Sources */,
 				01CD322D1D86B58F00D7497E /* StoryTableViewCell.swift in Sources */,
 				7C66E9541E99A39400079053 /* ProfileFeedViewController.swift in Sources */,

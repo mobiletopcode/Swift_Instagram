@@ -79,6 +79,7 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
             picker.dismiss(animated: true, completion: {})
             
             if let user = FIRAuth.auth()?.currentUser {
+                
                 let imgref = storage.child("\(user.uid)-\(NSDate().timeIntervalSince1970).jpg")
                 let metadata = FIRStorageMetadata(dictionary: [ "contentType" : "image/jpg"])
                 
@@ -97,22 +98,29 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
                         let url = metadata!.downloadURL()!.absoluteString
                         
                         if let video = media {
+                            
                             let videoref = storage.child("\(user.uid)-\(NSDate().timeIntervalSince1970)\(type)")
                             let videoMeta = FIRStorageMetadata(dictionary: [ "contentType" : "video/quicktime"])
                             videoref.put(video as Data, metadata: videoMeta) { metadata, error in
                                 let videourl = metadata!.downloadURL()!.absoluteString
                                 Story.createStory(user, url: url, video:videourl)
                             }
+                            
+                            self.progressView?.isHidden = true
+                            self.progressLabel?.text = kMessageUploadingDone
+                            
+                            self.dismiss(animated: false, completion: nil)
+                            self.tabBarController?.selectedIndex = 0 // home
+                            self.isPresented = false
+                            
+                            
                         } else {
-                            Story.createStory(user, url: url, video:"")
+                            
+                            self.applyImageFilter(user: user, imageUrl: url)
+                         
                         }
 
-                        self.progressView?.isHidden = true
-                        self.progressLabel?.text = kMessageUploadingDone
                         
-                        self.dismiss(animated: false, completion: nil)
-                        self.tabBarController?.selectedIndex = 0 // home
-                        self.isPresented = false
                     }
                 }
                 
@@ -135,6 +143,63 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
             self.tabBarController?.selectedIndex = 0 // home
             self.isPresented = false
         })
+    }
+    
+    func applyImageFilter(user: FIRUser,  imageUrl: String){
+        
+        let fileName = "\(NSDate().timeIntervalSince1970).jpg";
+        
+     //TODO: For now i have hardcoded some parameters as i am not sure what parameters needs to be dynamic
+        MTWebService.sharedService.getFilteredImage(fbUId: "4", appId: "4", objectId: "44", filter: "gan_vogh", filterFileName: fileName, srcImageUrl: imageUrl, s3FileName: "testiosswift", block: { (data, error) in
+            
+            if error != nil{
+                Story.createStory(user, url: imageUrl, video:"")
+            }else{
+                
+                //{savePaths=["s3:\/\/portraitdeep\/gan_vogh.jpg"]} = http://portraitdeep.s3.amazonaws.com/gan_vogh.jpg
+                //TODO: Above is not valid JSON so i have to apply manually processing of string. So once its corrected over server we should correct over here as well.
+                // Have to do error handling as well in case process doesn't work.
+                
+                if let newImageUrl = data as? String{
+                    
+                    print(newImageUrl)
+                    var finalNewImgUrl = newImageUrl.replacingOccurrences(of: "{savePaths=[\"", with: "")
+                    finalNewImgUrl = finalNewImgUrl.replacingOccurrences(of: "\"]}", with: "")
+                    finalNewImgUrl = finalNewImgUrl.replacingOccurrences(of: ":", with: "")
+                    
+                    
+                    let strComponents:[String] = finalNewImgUrl.components(separatedBy: "\\/")
+                    
+                    if strComponents.count == 4{
+                        finalNewImgUrl = "https://"+strComponents[2]+"."+strComponents[0]+".amazonaws.com/"+strComponents[3]
+                        print(finalNewImgUrl)
+                        Story.createStory(user, url: finalNewImgUrl, video:"")
+                        
+                    }else{
+                        Story.createStory(user, url: imageUrl, video:"")
+                    }
+                    
+                    
+                    
+                    
+                }else{
+                   Story.createStory(user, url: imageUrl, video:"")
+                }
+                
+            }
+            
+            
+            
+            self.progressView?.isHidden = true
+            self.progressLabel?.text = kMessageUploadingDone
+            
+            self.dismiss(animated: false, completion: nil)
+            self.tabBarController?.selectedIndex = 0 // home
+            self.isPresented = false
+            
+            
+        })
+        
     }
 
 }
