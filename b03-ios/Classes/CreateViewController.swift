@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 import AVFoundation
 import MobileCoreServices
-
 import GBHFacebookImagePicker
 
 class CreateViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,GBHFacebookImagePickerDelegate {
@@ -29,7 +28,7 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         if !self.isPresented {
             self.isPresented = true
-        self.showImagePickingOptions()
+          self.showImagePickingOptions()
         }
         
     }
@@ -119,7 +118,7 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
                             
                         } else {
                             
-                            self.applyImageFilter(user: user, imageUrl: url)
+                           self.applyImageFilter(user: user, imageUrl: url) // By RMN
                          
                         }
 
@@ -148,7 +147,7 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
         })
     }
     
-    func applyImageFilter(user: FIRUser,  imageUrl: String){
+    func applyImageFilter(user: FIRUser,  imageUrl: String){  // By RMN
         
         let fileName = "\(NSDate().timeIntervalSince1970).jpg";
         
@@ -287,7 +286,7 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
                         // Metadata contains file metadata such as size, content-type, and download URL.
                         let url = metadata!.downloadURL()!.absoluteString
                         
-                        self.applyImageFilter(user: user, imageUrl: url)
+                       self.applyImageFilter(user: user, imageUrl: url) // By RMN
                         
                     }
                 }

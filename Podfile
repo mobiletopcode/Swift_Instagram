@@ -17,7 +17,10 @@ def core_pods
     pod 'GoogleSignIn'
     pod 'SDWebImage'
     pod 'DateToolsSwift'
-    pod "GBHFacebookImagePicker"
+    pod 'GBHFacebookImagePicker'
+    pod 'EVContactsPicker'
+    
+
 end
 
 target 'Mustage' do

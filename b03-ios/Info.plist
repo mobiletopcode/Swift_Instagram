@@ -50,6 +50,8 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSContactsUsageDescription</key>
+	<string>App want to use your contacts</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Allow to use the photos from your Library to upload</string>
 	<key>UILaunchStoryboardName</key>

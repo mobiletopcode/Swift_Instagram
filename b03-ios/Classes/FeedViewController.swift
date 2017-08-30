@@ -12,8 +12,17 @@ import SDWebImage
 import AVFoundation
 import DateToolsSwift
 import MessageUI
+import EVContactsPicker
 
 class CustomUITabBar: UITabBar, UITabBarControllerDelegate {
+    
+
+    
+   
+    
+    
+    
+    
     
     static let scrollToTopNotification = Notification.Name("CustomUITabBar.scrollToTop")
 
@@ -34,8 +43,23 @@ class CustomUITabBar: UITabBar, UITabBarControllerDelegate {
 }
 
 class FeedViewController: UITableViewController, UIImagePickerControllerDelegate,
-    UINavigationControllerDelegate, StoryTableViewCellDelegate, UISearchResultsUpdating {
+UINavigationControllerDelegate, StoryTableViewCellDelegate, UISearchResultsUpdating, EVContactsPickerDelegate,MFMessageComposeViewControllerDelegate {
+    /*!
+     @method     messageComposeViewController:didFinishWithResult:
+     @abstract   Delegate callback which is called upon user's completion of message composition.
+     @discussion This delegate callback will be called when the user completes the message composition.
+     How the user chose to complete this task will be given as one of the parameters to the
+     callback.  Upon this call, the client should remove the view associated with the controller,
+     typically by dismissing modally.
+     @param      controller   The MFMessageComposeViewController instance which is returning the result.
+     @param      result       MessageComposeResult indicating how the user chose to complete the composition process.
+     */
 
+
+    var itemsImage : Data? = nil
+    var itemsString: String? = nil
+    
+    
     var searchController:UISearchController!
     let searchResultsController = UITableViewController()
     
@@ -402,6 +426,83 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         }
     }
     
+    
+    // MARK: - Show Contacts
+    
+    
+    func showContact(){
+        let contactPicker = EVContactsPickerViewController()
+        contactPicker.delegate = self as? EVContactsPickerDelegate
+        self.navigationController?.pushViewController(contactPicker, animated: true)
+        
+        
+        
+    }
+    
+    func didChooseContacts(_ contacts: [EVContactProtocol]?) {
+        var conlist = [String] ()
+        if let cons = contacts {
+            for con in cons {
+                if (con.phone) != nil {
+//                    conlist += fullname + "\n"
+                    conlist.append(con.phone!)
+                    
+                }
+            }
+            //            self.textView?.text = conlist
+            
+            self.showMessageController(list: conlist)
+            
+        } else {
+            print("I got nothing")
+        }
+               let _ = self.navigationController?.popViewController(animated: true)
+        
+    }
+    
+    
+    func showMessageController(list: [String]) {
+        
+        
+        if MFMessageComposeViewController.canSendText() {
+            let composeVC = MFMessageComposeViewController()
+            composeVC.messageComposeDelegate = self as MFMessageComposeViewControllerDelegate
+            // Configure the fields of the interface.
+            composeVC.recipients = list
+            // Present the view controller modally.
+            if itemsImage != nil {
+                composeVC.addAttachmentData(itemsImage!, typeIdentifier: "kUTTypePNG", filename: "image.png")
+                
+            }
+            
+            if itemsString != nil {
+                composeVC.body = itemsString
+                
+            }
+            
+            
+            self.present(composeVC, animated: true, completion: nil)
+            
+        }
+       
+        
+        //self.itemsMSG
+        
+        
+    }
+        // MARK: - Message composer
+    
+    
+    
+    @available(iOS 4.0, *)
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        
+        
+        
+        
+    }
+    
+    
     // MARK: - Cell delegate
     
     func storyAction(_ data: FIRDatabaseReference?) {
@@ -442,6 +543,7 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
                 }
                 
                 let activityViewController = UIActivityViewController(activityItems: items, applicationActivities: nil)
+                    activityViewController.excludedActivityTypes = [UIActivityType.print, UIActivityType.postToWeibo, UIActivityType.copyToPasteboard, UIActivityType.addToReadingList, UIActivityType.postToVimeo,UIActivityType.postToFacebook]
                 self.present(activityViewController, animated: true) {
                     // ..
                 }
@@ -465,6 +567,11 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         let menuController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let postedStory = Story(self.posts[position].key)
         
+        
+      
+        
+        
+        
         postedStory.fetchInBackground { (model, success) in
             
             // delete for own stories
@@ -476,6 +583,52 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
                     self.onStoryRemoved()
                 }
                 menuController.addAction(removeAction)
+                
+                let contactAction = UIAlertAction(title: "Contacts", style: .destructive) { (action) in
+                    // remove from my feed
+                    
+                    let snap = self.posts[position]
+                    
+                    
+                        let story = Story(snap.ref.key)
+                        
+                        story.fetchInBackground(completed: { (model, success) in
+                            
+                            // try to get image first
+//                            var items:[Any] = []
+                            
+                            if story.videoUrl != nil {
+//                                self.itemsMSG.append(story.videoUrl)
+                                self.itemsString = story.videoUrl.absoluteString
+                                
+                            } else if let imageManager = SDWebImageManager.shared(), let imageCache = SDImageCache.shared() {
+                                let imageURL:URL = URL(string:story.media)!
+                                
+                                if imageManager.cachedImageExists(for: imageURL) {
+                                    let cachedKey = imageManager.cacheKey(for: imageURL)
+                                    if let image = imageCache.imageFromDiskCache(forKey: cachedKey) {
+//                                        self.itemsMSG.append(image)
+                                        self.itemsImage = UIImageJPEGRepresentation(image, 0.5)
+                                    }
+                                } else {
+//                                    self.itemsMSG.append(imageURL)
+                                    self.itemsString = imageURL.absoluteString
+                                }
+                            }
+                        })
+                    
+                    
+                    
+                    
+                    
+                    
+                    self.showContact()
+                }
+                menuController.addAction(contactAction)
+                
+                
+                
+                
             }
             // hide or report for others
             else {
@@ -492,7 +645,7 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
                         let email = MFMailComposeViewController()
                         email.setSubject("Report a content")
                         email.setMessageBody(body, isHTML: false)
-                        email.mailComposeDelegate = self
+                        email.mailComposeDelegate = self as! MFMailComposeViewControllerDelegate
                         email.setToRecipients([kReportEmail])
                         self.present(email, animated: true, completion: nil)
                     } else {
@@ -544,4 +697,5 @@ extension FeedViewController : UserTableViewCellDelegate {
         storyMenu(storyRef, position: position)
     }
 }
+
 

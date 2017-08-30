@@ -33,19 +33,25 @@
 		01FD18611DB268C0005C5722 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD18601DB268C0005C5722 /* UserTableViewCell.swift */; };
 		01FF76B01D85F17E009B0D99 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF76AF1D85F17E009B0D99 /* Story.swift */; };
 		01FF76B51D85F311009B0D99 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF76B41D85F311009B0D99 /* Comment.swift */; };
-		0BED6DA08DF5035AEC7BE294 /* Pods_Mustage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AEA4F89B1182F4DD3A3638 /* Pods_Mustage.framework */; };
-		5DD61EFF1F3994EF00E4B71C /* MTWebService+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61EE21F3994EF00E4B71C /* MTWebService+Errors.swift */; };
-		5DD61F001F3994EF00E4B71C /* MTWebService+Primitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61EE31F3994EF00E4B71C /* MTWebService+Primitives.swift */; };
-		5DD61F011F3994EF00E4B71C /* MTWebService+Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61EE41F3994EF00E4B71C /* MTWebService+Requests.swift */; };
-		5DD61F021F3994EF00E4B71C /* MTWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61EE51F3994EF00E4B71C /* MTWebService.swift */; };
-		5DD61F1C1F39966F00E4B71C /* MTMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61F1B1F39966F00E4B71C /* MTMessages.swift */; };
-		5DD61F1E1F39983F00E4B71C /* MTWebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61F1D1F39983F00E4B71C /* MTWebServiceRequest.swift */; };
-		5DD61F211F399D6900E4B71C /* MTWebServiceImgFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD61F201F399D6900E4B71C /* MTWebServiceImgFilter.swift */; };
-		60227371BC4D0A5CEDB7AD43 /* Pods_MustageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85995037BF37EBA6A02B7866 /* Pods_MustageTests.framework */; };
+		18313B3F9360C7141F803AB1 /* Pods_MustageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1681294ECB41A290FB5E51C /* Pods_MustageTests.framework */; };
+		529F7BF2188307FF2B401989 /* Pods_Mustage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA6F21772060FFA70444CD /* Pods_Mustage.framework */; };
 		7C66E9541E99A39400079053 /* ProfileFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C66E9531E99A39400079053 /* ProfileFeedViewController.swift */; };
-		7CB960A41E8064CD00BE0FD1 /* MustageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB960A31E8064CD00BE0FD1 /* MustageTests.swift */; };
 		7CD545891EEA1F6F00691B06 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD545881EEA1F6F00691B06 /* MessageUI.framework */; };
 		9A9D3EC81F41B19C00E22073 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D3EC71F41B19C00E22073 /* GoogleService-Info.plist */; };
+		DDBE415A1F55FA6000F645D6 /* MTWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE41591F55FA6000F645D6 /* MTWebService.swift */; };
+		DDBE415B1F55FA6000F645D6 /* MTWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE41591F55FA6000F645D6 /* MTWebService.swift */; };
+		DDBE41611F55FA7C00F645D6 /* MTWebService+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE415D1F55FA7C00F645D6 /* MTWebService+Errors.swift */; };
+		DDBE41621F55FA7C00F645D6 /* MTWebService+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE415D1F55FA7C00F645D6 /* MTWebService+Errors.swift */; };
+		DDBE41631F55FA7C00F645D6 /* MTWebService+Primitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE415E1F55FA7C00F645D6 /* MTWebService+Primitives.swift */; };
+		DDBE41641F55FA7C00F645D6 /* MTWebService+Primitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE415E1F55FA7C00F645D6 /* MTWebService+Primitives.swift */; };
+		DDBE41651F55FA7C00F645D6 /* MTWebService+Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE415F1F55FA7C00F645D6 /* MTWebService+Requests.swift */; };
+		DDBE41661F55FA7C00F645D6 /* MTWebService+Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE415F1F55FA7C00F645D6 /* MTWebService+Requests.swift */; };
+		DDBE41671F55FA7C00F645D6 /* MTWebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE41601F55FA7C00F645D6 /* MTWebServiceRequest.swift */; };
+		DDBE41681F55FA7C00F645D6 /* MTWebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE41601F55FA7C00F645D6 /* MTWebServiceRequest.swift */; };
+		DDBE416A1F55FA8300F645D6 /* MTWebServiceImgFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE41691F55FA8300F645D6 /* MTWebServiceImgFilter.swift */; };
+		DDBE416B1F55FA8300F645D6 /* MTWebServiceImgFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE41691F55FA8300F645D6 /* MTWebServiceImgFilter.swift */; };
+		DDBE416D1F55FB2000F645D6 /* MTMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE416C1F55FB2000F645D6 /* MTMessages.swift */; };
+		DDBE416E1F55FB2000F645D6 /* MTMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE416C1F55FB2000F645D6 /* MTMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,39 +94,24 @@
 		01FD18601DB268C0005C5722 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = Classes/UserTableViewCell.swift; sourceTree = "<group>"; };
 		01FF76AF1D85F17E009B0D99 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = Classes/Story.swift; sourceTree = "<group>"; };
 		01FF76B41D85F311009B0D99 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = Classes/Comment.swift; sourceTree = "<group>"; };
-		0305A6DF6F253C411BBA7FFF /* Pods-b03-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-b03-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-b03-ios/Pods-b03-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		0D429A92A700CC4F869FB7AC /* Pods-Mustage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mustage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mustage/Pods-Mustage.release.xcconfig"; sourceTree = "<group>"; };
 		0F7B2827E1C151C77D380A9D /* Pods-Mustage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mustage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mustage/Pods-Mustage.debug.xcconfig"; sourceTree = "<group>"; };
-		17363C411C874EEBD8401737 /* Pods_b03_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_b03_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		302EC8C203B30E3A1DCD5D0A /* Pods-MustageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MustageTests/Pods-MustageTests.release.xcconfig"; sourceTree = "<group>"; };
-		439D3F324BE7C96C21FD537E /* Pods-b03-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-b03-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-b03-iosUITests/Pods-b03-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		45209BB94AFEA947BAE39B48 /* Pods_b03_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_b03_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		529A3A5D026FF4BAA2AA1E00 /* Pods-b03-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-b03-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-b03-iosTests/Pods-b03-iosTests.release.xcconfig"; sourceTree = "<group>"; };
-		5DD61EE21F3994EF00E4B71C /* MTWebService+Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTWebService+Errors.swift"; sourceTree = "<group>"; };
-		5DD61EE31F3994EF00E4B71C /* MTWebService+Primitives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTWebService+Primitives.swift"; sourceTree = "<group>"; };
-		5DD61EE41F3994EF00E4B71C /* MTWebService+Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTWebService+Requests.swift"; sourceTree = "<group>"; };
-		5DD61EE51F3994EF00E4B71C /* MTWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTWebService.swift; sourceTree = "<group>"; };
-		5DD61F1B1F39966F00E4B71C /* MTMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTMessages.swift; sourceTree = "<group>"; };
-		5DD61F1D1F39983F00E4B71C /* MTWebServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTWebServiceRequest.swift; sourceTree = "<group>"; };
-		5DD61F201F399D6900E4B71C /* MTWebServiceImgFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTWebServiceImgFilter.swift; sourceTree = "<group>"; };
-		76AEA4F89B1182F4DD3A3638 /* Pods_Mustage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mustage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F3FCF1EB35B1D00133AB8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		7C66E9531E99A39400079053 /* ProfileFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileFeedViewController.swift; path = Classes/ProfileFeedViewController.swift; sourceTree = "<group>"; };
 		7CB960A11E8064CD00BE0FD1 /* MustageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MustageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CB960A31E8064CD00BE0FD1 /* MustageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustageTests.swift; sourceTree = "<group>"; };
-		7CB960A51E8064CD00BE0FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD545881EEA1F6F00691B06 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		7CEBBEB61E80988900843C9B /* Pods_Mustage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Mustage.framework; path = "DerivedData/Project/Build/Products/Debug-iphonesimulator/Pods_Mustage.framework"; sourceTree = "<group>"; };
-		82CB9D0416DE3B33422BFB5D /* Pods-b03-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-b03-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-b03-iosTests/Pods-b03-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		85995037BF37EBA6A02B7866 /* Pods_MustageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MustageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9D3EC71F41B19C00E22073 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A0113D3EB943776C6B99D986 /* Pods_b03_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_b03_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE8FAF7FF1D718C6629167A0 /* Pods-Mustage-MustageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mustage-MustageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mustage-MustageTests/Pods-Mustage-MustageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1681294ECB41A290FB5E51C /* Pods_MustageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MustageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CA6F21772060FFA70444CD /* Pods_Mustage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mustage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC9C15314237A3F5BCDC763 /* Pods-MustageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MustageTests/Pods-MustageTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D1C919868E7D2C9378179DA2 /* Pods_Mustage_MustageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mustage_MustageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5EF8A5BD0C6A6E63269A9B0 /* Pods-b03-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-b03-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-b03-ios/Pods-b03-ios.release.xcconfig"; sourceTree = "<group>"; };
-		D7C9E1A9F55F8CF2569E9157 /* Pods-Mustage-MustageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mustage-MustageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mustage-MustageTests/Pods-Mustage-MustageTests.release.xcconfig"; sourceTree = "<group>"; };
-		DBEE1A22F95AE671D770A676 /* Pods-b03-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-b03-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-b03-iosUITests/Pods-b03-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DDBE41591F55FA6000F645D6 /* MTWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MTWebService.swift; path = ../MTWebService.swift; sourceTree = "<group>"; };
+		DDBE415D1F55FA7C00F645D6 /* MTWebService+Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTWebService+Errors.swift"; sourceTree = "<group>"; };
+		DDBE415E1F55FA7C00F645D6 /* MTWebService+Primitives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTWebService+Primitives.swift"; sourceTree = "<group>"; };
+		DDBE415F1F55FA7C00F645D6 /* MTWebService+Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTWebService+Requests.swift"; sourceTree = "<group>"; };
+		DDBE41601F55FA7C00F645D6 /* MTWebServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTWebServiceRequest.swift; sourceTree = "<group>"; };
+		DDBE41691F55FA8300F645D6 /* MTWebServiceImgFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTWebServiceImgFilter.swift; sourceTree = "<group>"; };
+		DDBE416C1F55FB2000F645D6 /* MTMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD545891EEA1F6F00691B06 /* MessageUI.framework in Frameworks */,
-				0BED6DA08DF5035AEC7BE294 /* Pods_Mustage.framework in Frameworks */,
+				529F7BF2188307FF2B401989 /* Pods_Mustage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60227371BC4D0A5CEDB7AD43 /* Pods_MustageTests.framework in Frameworks */,
+				18313B3F9360C7141F803AB1 /* Pods_MustageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				01D8DE301D84534100E6D6AC /* Classes */,
-				7CB960A21E8064CD00BE0FD1 /* MustageTests */,
 				01D8DE2F1D84534100E6D6AC /* Products */,
 				F11BCB06F4187F9A994B6C43 /* Pods */,
 				9D8050F91F915462DFA1DCBD /* Frameworks */,
@@ -211,8 +201,7 @@
 		01D8DE301D84534100E6D6AC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5DD61F1A1F39966F00E4B71C /* Utilities */,
-				5DD61EE01F3994EF00E4B71C /* Network */,
+				DDBE415C1F55FA6900F645D6 /* Network */,
 				0179FB501D8986F200A91115 /* Config.swift */,
 				01D8DE311D84534100E6D6AC /* AppDelegate.swift */,
 				01FF76B31D85F213009B0D99 /* Model */,
@@ -237,76 +226,37 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		5DD61EE01F3994EF00E4B71C /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				5DD61F1F1F399D6900E4B71C /* Requests */,
-				5DD61F1D1F39983F00E4B71C /* MTWebServiceRequest.swift */,
-				5DD61EE21F3994EF00E4B71C /* MTWebService+Errors.swift */,
-				5DD61EE31F3994EF00E4B71C /* MTWebService+Primitives.swift */,
-				5DD61EE41F3994EF00E4B71C /* MTWebService+Requests.swift */,
-				5DD61EE51F3994EF00E4B71C /* MTWebService.swift */,
-			);
-			name = Network;
-			path = Classes/Network;
-			sourceTree = "<group>";
-		};
-		5DD61F1A1F39966F00E4B71C /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				5DD61F1B1F39966F00E4B71C /* MTMessages.swift */,
-			);
-			name = Utilities;
-			path = Classes/Utilities;
-			sourceTree = "<group>";
-		};
-		5DD61F1F1F399D6900E4B71C /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				5DD61F201F399D6900E4B71C /* MTWebServiceImgFilter.swift */,
-			);
-			path = Requests;
-			sourceTree = "<group>";
-		};
-		7CB960A21E8064CD00BE0FD1 /* MustageTests */ = {
-			isa = PBXGroup;
-			children = (
-				7CB960A31E8064CD00BE0FD1 /* MustageTests.swift */,
-				7CB960A51E8064CD00BE0FD1 /* Info.plist */,
-			);
-			path = MustageTests;
-			sourceTree = "<group>";
-		};
 		9D8050F91F915462DFA1DCBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7CD545881EEA1F6F00691B06 /* MessageUI.framework */,
-				7CEBBEB61E80988900843C9B /* Pods_Mustage.framework */,
-				A0113D3EB943776C6B99D986 /* Pods_b03_ios.framework */,
-				45209BB94AFEA947BAE39B48 /* Pods_b03_iosTests.framework */,
-				17363C411C874EEBD8401737 /* Pods_b03_iosUITests.framework */,
-				76AEA4F89B1182F4DD3A3638 /* Pods_Mustage.framework */,
-				85995037BF37EBA6A02B7866 /* Pods_MustageTests.framework */,
-				D1C919868E7D2C9378179DA2 /* Pods_Mustage_MustageTests.framework */,
+				C3CA6F21772060FFA70444CD /* Pods_Mustage.framework */,
+				A1681294ECB41A290FB5E51C /* Pods_MustageTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDBE415C1F55FA6900F645D6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DDBE416C1F55FB2000F645D6 /* MTMessages.swift */,
+				DDBE41691F55FA8300F645D6 /* MTWebServiceImgFilter.swift */,
+				DDBE41591F55FA6000F645D6 /* MTWebService.swift */,
+				DDBE415D1F55FA7C00F645D6 /* MTWebService+Errors.swift */,
+				DDBE415E1F55FA7C00F645D6 /* MTWebService+Primitives.swift */,
+				DDBE415F1F55FA7C00F645D6 /* MTWebService+Requests.swift */,
+				DDBE41601F55FA7C00F645D6 /* MTWebServiceRequest.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 		F11BCB06F4187F9A994B6C43 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0305A6DF6F253C411BBA7FFF /* Pods-b03-ios.debug.xcconfig */,
-				D5EF8A5BD0C6A6E63269A9B0 /* Pods-b03-ios.release.xcconfig */,
-				82CB9D0416DE3B33422BFB5D /* Pods-b03-iosTests.debug.xcconfig */,
-				529A3A5D026FF4BAA2AA1E00 /* Pods-b03-iosTests.release.xcconfig */,
-				439D3F324BE7C96C21FD537E /* Pods-b03-iosUITests.debug.xcconfig */,
-				DBEE1A22F95AE671D770A676 /* Pods-b03-iosUITests.release.xcconfig */,
 				0F7B2827E1C151C77D380A9D /* Pods-Mustage.debug.xcconfig */,
 				0D429A92A700CC4F869FB7AC /* Pods-Mustage.release.xcconfig */,
 				CEC9C15314237A3F5BCDC763 /* Pods-MustageTests.debug.xcconfig */,
 				302EC8C203B30E3A1DCD5D0A /* Pods-MustageTests.release.xcconfig */,
-				CE8FAF7FF1D718C6629167A0 /* Pods-Mustage-MustageTests.debug.xcconfig */,
-				D7C9E1A9F55F8CF2569E9157 /* Pods-Mustage-MustageTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -368,7 +318,7 @@
 				TargetAttributes = {
 					01D8DE2D1D84534100E6D6AC = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2B69NXULXJ;
+						DevelopmentTeam = CSQJ6Z76EN;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -542,32 +492,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				0116A81C1DA904210067EBD4 /* BannerViewController.swift in Sources */,
+				DDBE41671F55FA7C00F645D6 /* MTWebServiceRequest.swift in Sources */,
 				01CD32251D86B57800D7497E /* WelcomeViewController.swift in Sources */,
 				01FD18611DB268C0005C5722 /* UserTableViewCell.swift in Sources */,
+				DDBE41631F55FA7C00F645D6 /* MTWebService+Primitives.swift in Sources */,
 				0179FB531D89939E00A91115 /* Favorite.swift in Sources */,
 				01CD32231D8627CD00D7497E /* CreateViewController.swift in Sources */,
+				DDBE415A1F55FA6000F645D6 /* MTWebService.swift in Sources */,
 				01FD185F1DAF86F5005C5722 /* ModelBase.swift in Sources */,
 				01CD32291D86B58400D7497E /* CommentsTableViewController.swift in Sources */,
+				DDBE416A1F55FA8300F645D6 /* MTWebServiceImgFilter.swift in Sources */,
 				01FF76B01D85F17E009B0D99 /* Story.swift in Sources */,
+				DDBE41611F55FA7C00F645D6 /* MTWebService+Errors.swift in Sources */,
 				01CD322B1D86B58900D7497E /* ProfileViewController.swift in Sources */,
 				01CC78A01DADAA1800913FED /* EditProfileViewController.swift in Sources */,
-				5DD61F021F3994EF00E4B71C /* MTWebService.swift in Sources */,
 				01FD185D1DAF075E005C5722 /* User.swift in Sources */,
 				01D8DE321D84534100E6D6AC /* AppDelegate.swift in Sources */,
-				5DD61F1C1F39966F00E4B71C /* MTMessages.swift in Sources */,
 				0179FB511D8986F200A91115 /* Config.swift in Sources */,
 				01CC789E1DABFE2B00913FED /* ProfileView.swift in Sources */,
 				01FF76B51D85F311009B0D99 /* Comment.swift in Sources */,
+				DDBE416D1F55FB2000F645D6 /* MTMessages.swift in Sources */,
 				01CD32211D86048300D7497E /* CommentTableViewCell.swift in Sources */,
-				5DD61F001F3994EF00E4B71C /* MTWebService+Primitives.swift in Sources */,
-				5DD61F1E1F39983F00E4B71C /* MTWebServiceRequest.swift in Sources */,
-				5DD61EFF1F3994EF00E4B71C /* MTWebService+Errors.swift in Sources */,
 				0179FB4D1D8985DC00A91115 /* Like.swift in Sources */,
+				DDBE41651F55FA7C00F645D6 /* MTWebService+Requests.swift in Sources */,
 				01CD32271D86B57F00D7497E /* FeedViewController.swift in Sources */,
 				0179FB4F1D8986A100A91115 /* ViewHelper.swift in Sources */,
-				5DD61F011F3994EF00E4B71C /* MTWebService+Requests.swift in Sources */,
 				01D7EAE81DA55D3E00FF7607 /* AuthPickerViewController.swift in Sources */,
-				5DD61F211F399D6900E4B71C /* MTWebServiceImgFilter.swift in Sources */,
 				01A018D51DD244160072F299 /* StoryViewController.swift in Sources */,
 				01CD322D1D86B58F00D7497E /* StoryTableViewCell.swift in Sources */,
 				7C66E9541E99A39400079053 /* ProfileFeedViewController.swift in Sources */,
@@ -578,7 +528,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB960A41E8064CD00BE0FD1 /* MustageTests.swift in Sources */,
+				DDBE415B1F55FA6000F645D6 /* MTWebService.swift in Sources */,
+				DDBE41621F55FA7C00F645D6 /* MTWebService+Errors.swift in Sources */,
+				DDBE41681F55FA7C00F645D6 /* MTWebServiceRequest.swift in Sources */,
+				DDBE416E1F55FB2000F645D6 /* MTMessages.swift in Sources */,
+				DDBE41641F55FA7C00F645D6 /* MTWebService+Primitives.swift in Sources */,
+				DDBE416B1F55FA8300F645D6 /* MTWebServiceImgFilter.swift in Sources */,
+				DDBE41661F55FA7C00F645D6 /* MTWebService+Requests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,13 +664,14 @@
 				CODE_SIGN_ENTITLEMENTS = Mustage.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2B69NXULXJ;
+				DEVELOPMENT_TEAM = CSQJ6Z76EN;
 				INFOPLIST_FILE = "b03-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.handByhand.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f6a383a7-5fc5-48d0-8b20-733da6ccae59";
-				PROVISIONING_PROFILE_SPECIFIER = emojiDev_10_08_17;
+				PROVISIONING_PROFILE = "2b8f7537-6a27-40ce-b108-093abfd6d0c0";
+				PROVISIONING_PROFILE_SPECIFIER = HBH_5Aug_2017_Dev;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -727,13 +684,14 @@
 				CODE_SIGN_ENTITLEMENTS = Mustage.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2B69NXULXJ;
+				DEVELOPMENT_TEAM = CSQJ6Z76EN;
 				INFOPLIST_FILE = "b03-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.handByhand.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f6a383a7-5fc5-48d0-8b20-733da6ccae59";
-				PROVISIONING_PROFILE_SPECIFIER = emojiDev_10_08_17;
+				PROVISIONING_PROFILE = "2b8f7537-6a27-40ce-b108-093abfd6d0c0";
+				PROVISIONING_PROFILE_SPECIFIER = HBH_5Aug_2017_Dev;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
