@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "b03-ios/Classes/FeedViewController.swift"
+            timestampString = "525738973.860972"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "509"
+            endingLineNumber = "509"
+            landmarkName = "storyAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mustage.FeedViewController.storyAction (Swift.Optional&lt;__ObjC.FIRDatabaseReference&gt;) -&gt; ()"
+                  moduleName = "Mustage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/experttechnics/Desktop/TestJobs/Swift_Instagram-master/b03-ios/Classes/FeedViewController.swift"
+                  timestampString = "525738974.108786"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "509"
+                  endingLineNumber = "509"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mustage.FeedViewController.storyAction (Swift.Optional&lt;__ObjC.FIRDatabaseReference&gt;) -&gt; ()"
+                  moduleName = "Mustage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/experttechnics/Desktop/TestJobs/Swift_Instagram-master/b03-ios/Classes/FeedViewController.swift"
+                  timestampString = "525738974.111388"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "509"
+                  endingLineNumber = "509"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "b03-ios/Classes/FeedViewController.swift"
+            timestampString = "525738973.860972"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "515"
+            endingLineNumber = "515"
+            landmarkName = "storyDidLike(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mustage.FeedViewController.storyDidLike (Swift.Optional&lt;__ObjC.FIRDatabaseReference&gt;) -&gt; ()"
+                  moduleName = "Mustage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/experttechnics/Desktop/TestJobs/Swift_Instagram-master/b03-ios/Classes/FeedViewController.swift"
+                  timestampString = "525738974.129018"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "515"
+                  endingLineNumber = "515"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mustage.FeedViewController.storyDidLike (Swift.Optional&lt;__ObjC.FIRDatabaseReference&gt;) -&gt; ()"
+                  moduleName = "Mustage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/experttechnics/Desktop/TestJobs/Swift_Instagram-master/b03-ios/Classes/FeedViewController.swift"
+                  timestampString = "525738974.130942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "515"
+                  endingLineNumber = "515"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "b03-ios/Classes/FeedViewController.swift"
+            timestampString = "525738973.860972"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "521"
+            endingLineNumber = "521"
+            landmarkName = "storyDidShare(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mustage.FeedViewController.storyDidShare (Swift.Optional&lt;__ObjC.FIRDatabaseReference&gt;) -&gt; ()"
+                  moduleName = "Mustage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/experttechnics/Desktop/TestJobs/Swift_Instagram-master/b03-ios/Classes/FeedViewController.swift"
+                  timestampString = "525738974.137224"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "522"
+                  endingLineNumber = "522"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mustage.FeedViewController.storyDidShare (Swift.Optional&lt;__ObjC.FIRDatabaseReference&gt;) -&gt; ()"
+                  moduleName = "Mustage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/experttechnics/Desktop/TestJobs/Swift_Instagram-master/b03-ios/Classes/FeedViewController.swift"
+                  timestampString = "525738974.139825"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "522"
+                  endingLineNumber = "522"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
